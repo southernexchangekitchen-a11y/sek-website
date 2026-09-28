@@ -19,20 +19,13 @@
     tabsEl.addEventListener("click", function (e) {
       var t = e.target;
       var b = t.closest ? t.closest(".menu-tab") : null;
-      if (!b) return;
+      if (!b || b.classList.contains("active")) return;
       tabs.forEach(function (x) { x.classList.toggle("active", x === b); });
       var sec = b.getAttribute("data-sec");
       if (subEl) subEl.textContent = SUBS[sec] || "";
       cards.forEach(function (c) {
-        var show = c.getAttribute("data-sec") === sec;
-        if (show) {
+        if (c.getAttribute("data-sec") === sec) {
           c.removeAttribute("hidden");
-          if (c.animate) {
-            c.animate(
-              [{ opacity: 0, transform: "translateY(14px)" }, { opacity: 1, transform: "none" }],
-              { duration: 260, easing: "ease-out" }
-            );
-          }
         } else {
           c.setAttribute("hidden", "");
         }
