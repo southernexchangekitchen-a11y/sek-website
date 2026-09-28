@@ -3,7 +3,7 @@
   "use strict";
 
   var SUBS = {
-    combos: "Any sandwich + 6 oz side + drink",
+    combos: "Any sandwich + 4 oz side + drink",
     dinners: "2 sides + Texas toast",
     bigback: "Jumbo russet with cheese, sour cream, scallions & BBQ drizzle",
     special: "Ask about today\u2019s special \u2014 ribs (regular & jerk) when we run \u2019em"
