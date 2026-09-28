@@ -93,8 +93,99 @@
       <h2>Smoked Low &amp; Slow</h2>
       <p class="section-sub">Everything&rsquo;s made from scratch, every day. When it&rsquo;s gone, it&rsquo;s gone.</p>
     </div>
-    <div class="menu-tabs" id="menuTabs" role="tablist"></div>
-    <div class="menu-grid" id="menuGrid"></div>
+    <div class="menu-tabs" id="menuTabs" role="tablist">
+      <button class="menu-tab active" role="tab" data-sec="combos">Sandwich Combos</button>
+      <button class="menu-tab" role="tab" data-sec="dinners">Meat Dinners</button>
+      <button class="menu-tab" role="tab" data-sec="bigback">Big Back Loaded Potato</button>
+      <button class="menu-tab" role="tab" data-sec="pound">Meats by the Pound</button>
+      <button class="menu-tab" role="tab" data-sec="sides">Signature Sides</button>
+      <button class="menu-tab" role="tab" data-sec="desserts">Dessert & Drinks</button>
+      <button class="menu-tab" role="tab" data-sec="special">Today’s Special</button>
+    </div>
+    <p class="menu-sub" id="menuSub">Any sandwich + 4 oz side + drink</p>
+    <div class="menu-grid" id="menuGrid">
+    <article class="menu-card" data-sec="combos">
+      <div class="menu-photo"><img src="images/brisket.jpg" alt="Brisket Combo" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"><span class="badge">Must Try</span></div>
+      <div class="menu-body"><h3>Brisket Combo</h3><p>18-hour smoked brisket · sandwich only $10.99</p><div class="menu-row"><span class="price">$17.99</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="combos">
+      <div class="menu-photo"><img src="images/pulled-chicken-sandwich.jpg" alt="Pulled Chicken Combo" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"></div>
+      <div class="menu-body"><h3>Pulled Chicken Combo</h3><p>Smoked pulled chicken · sandwich only $7.99</p><div class="menu-row"><span class="price">$14.99</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="combos">
+      <div class="menu-photo"><img src="images/pulled-pork-sandwich.jpg" alt="Pulled Pork Combo" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"></div>
+      <div class="menu-body"><h3>Pulled Pork Combo</h3><p>Slow-smoked pulled pork · sandwich only $6.99</p><div class="menu-row"><span class="price">$13.99</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="combos">
+      <div class="menu-photo"><img src="images/hot-link-sandwich.jpg" alt="Hot Link Combo" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"></div>
+      <div class="menu-body"><h3>Hot Link Combo</h3><p>Smoked hot link, split & seared to order · sandwich only $5.99</p><div class="menu-row"><span class="price">$12.99</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="dinners" hidden>
+      <div class="menu-photo"><img src="images/one-meat-dinner.jpg" alt="1 Meat Dinner" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"></div>
+      <div class="menu-body"><h3>1 Meat Dinner</h3><p>1/3 lb of one meat</p><div class="menu-row"><span class="price">$14.99</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="dinners" hidden>
+      <div class="menu-photo"><img src="images/two-meat-dinner.jpg" alt="2 Meat Dinner" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"></div>
+      <div class="menu-body"><h3>2 Meat Dinner</h3><p>1/3 lb + 1/4 lb — your pick of two</p><div class="menu-row"><span class="price">$18.99</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="bigback" hidden>
+      <div class="menu-photo"><img src="images/big-back-potato.jpg" alt="Big Back Loaded Potato" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"><span class="badge">Fan Favorite</span></div>
+      <div class="menu-body"><h3>Big Back Loaded Potato</h3><p>1/3 lb pulled pork or pulled chicken · brisket +$4</p><div class="menu-row"><span class="price">$14.99</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="bigback" hidden>
+      <div class="menu-photo"><img src="images/big-back-potato.jpg" alt="Big Back — Meat Less" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"></div>
+      <div class="menu-body"><h3>Big Back — Meat Less</h3><p>All the toppings, no meat</p><div class="menu-row"><span class="price">$9.00</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="pound" hidden>
+      <div class="menu-photo"><img src="images/brisket-slab.jpg" alt="Brisket" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"></div>
+      <div class="menu-body"><h3>Brisket</h3><p>18-hour smoked</p><div class="menu-row"><span class="price">$31.99/lb</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="pound" hidden>
+      <div class="menu-photo"><img src="images/pulled-pork.jpg" alt="Pulled Pork" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"></div>
+      <div class="menu-body"><h3>Pulled Pork</h3><p>Slow-smoked</p><div class="menu-row"><span class="price">$20.99/lb</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="pound" hidden>
+      <div class="menu-photo"><img src="images/pulled-chicken-sandwich.jpg" alt="Pulled Chicken" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"></div>
+      <div class="menu-body"><h3>Pulled Chicken</h3><p>Smoked & pulled</p><div class="menu-row"><span class="price">$20.99/lb</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="pound" hidden>
+      <div class="menu-photo"><img src="images/rib-tips.jpg" alt="Rib Tips" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"><span class="badge">Best Seller</span></div>
+      <div class="menu-body"><h3>Rib Tips</h3><p>Rich BBQ glaze, perfect smoke ring</p><div class="menu-row"><span class="price">$14.99/lb</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="sides" hidden>
+      <div class="menu-photo"><img src="images/potato-salad.jpg" alt="Potato Salad" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"></div>
+      <div class="menu-body"><h3>Potato Salad</h3><p>Classic Southern potato salad, creamy and well-seasoned.</p><div class="menu-row"><span class="price">$3.99</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="sides" hidden>
+      <div class="menu-photo"><img src="images/coleslaw.jpg" alt="Coleslaw" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"></div>
+      <div class="menu-body"><h3>Coleslaw</h3><p>Creamy, tangy Southern coleslaw with a fresh crunch.</p><div class="menu-row"><span class="price">$3.99</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="sides" hidden>
+      <div class="menu-photo"><img src="images/pasta-salad.jpg" alt="Pasta Salad" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"></div>
+      <div class="menu-body"><h3>Pasta Salad</h3><p>Chilled pasta salad with fresh vegetables and Southern seasoning.</p><div class="menu-row"><span class="price">$3.99</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="sides" hidden>
+      <div class="menu-photo"><img src="images/mac-cheese.jpg" alt="Baked Mac & Cheese" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"><span class="badge">Premium</span></div>
+      <div class="menu-body"><h3>Baked Mac & Cheese</h3><p>Creamy, rich Southern-style baked mac with a golden crust.</p><div class="menu-row"><span class="price">$4.99</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="sides" hidden>
+      <div class="menu-photo"><img src="images/baked-beans.jpg" alt="Brickhouse Baked Beans" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"><span class="badge">Premium</span></div>
+      <div class="menu-body"><h3>Brickhouse Baked Beans</h3><p>Signature slow-cooked baked beans, a customer favorite.</p><div class="menu-row"><span class="price">$4.99</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="desserts" hidden>
+      <div class="menu-photo"><img src="images/peach-cobbler.jpg" alt="Peach Cobbler" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"></div>
+      <div class="menu-body"><h3>Peach Cobbler</h3><p>Golden-brown crust, bubbling peach filling.</p><div class="menu-row"><span class="price">$5.99</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="desserts" hidden>
+      <div class="menu-photo"><img src="images/lemonade.jpg" alt="Lemonade & Sweet Tea" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"></div>
+      <div class="menu-body"><h3>Lemonade & Sweet Tea</h3><p>Peach, strawberry or mango flavor +$0.50</p><div class="menu-row"><span class="price">$2.99</span></div></div>
+    </article>
+    <article class="menu-card" data-sec="special" hidden>
+      <div class="menu-photo"><img src="images/smoked-ribs.jpg" alt="Smoked Ribs" loading="lazy" onerror="this.closest('.menu-photo').style.display='none'"></div>
+      <div class="menu-body"><h3>Smoked Ribs</h3><p>Regular & jerk</p><div class="menu-row"><span class="price">Ask</span></div></div>
+    </article>
+    </div>
+
     <p class="menu-note">Sandwich-only prices listed under each combo. Premium sides (mac &amp; cheese, Brickhouse beans) +$1 on combos &amp; dinners. Brisket +$4 on dinners &amp; potatoes.</p>
   </section>
 
